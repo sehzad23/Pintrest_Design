@@ -176,13 +176,13 @@ body {
     .section-3 {
         width: 100%;
         min-height: 70vh;
-        padding: 5px 25px;
+        padding: 5px 0;
 
         .content {
             width: 100%;
             height: 85%;
             display: flex;
-            padding: 0 125px;
+            padding: 0 100px;
             justify-content: space-between;
             gap: 2vw;
 
@@ -221,6 +221,7 @@ body {
                 .section-part1-bottom {
                     width: 100%;
                     display: flex;
+
 
                     .boxes {
                         display: flex;
@@ -277,70 +278,185 @@ body {
 
 
     .section-4 {
-
         width: 100%;
         height: 100vh;
-
-        padding: 10px;
+        margin-top: 80px;
 
         .content {
-            width: 90%;
+            width: 100%;
             height: 100%;
-            margin: 0 auto;
 
-            h2 {
+            h1 {
                 font-size: 3.5vw;
                 text-align: center;
             }
 
+            .grid-box {
 
-            .container {
-                display: flex;
-                gap: 20px;
-                padding: 20px 20px;
-                margin-top: 50px;
+                width: 90%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 50px;
+                padding: 30px 30px;
+                margin: 0 auto;
+                margin-top: 40px;
 
-                .left {
-                    background-color: #fbe8df;
-                    flex: 1;
-                    border: 2px solid red;
-                    border-radius: 15px;
-                    height: 780px; // Tall box height
-                    background-color: #f6d0cd;
+                .box1 {
+                    grid-column: 1;
+                    grid-row: 1/3;
+                    border-radius: 40px;
+                    padding: 10px 30px;
+
+                    img {
+                        width: 100%;
+
+                    }
+
+                    h5 {
+                        font-size: 1.5vw;
+                        background-color: #dab02a;
+                        width: fit-content;
+                        padding: 10px 20px;
+                        margin-top: 20px;
+                        border-radius: 50px;
+                    }
+
+                    p {
+                        font-size: 1.2vw;
+                        margin-top: 10px;
+                        line-height: 1.8;
+                        padding: 10px 0;
+                    }
                 }
 
-                .right {
+                .box2 {
+                    border-radius: 40px;
+                    grid-column: 2;
+                    /* column 2 */
+                    grid-row: 1;
+                    /* row 1 */
+                    padding: 10px 30px;
 
-                    flex: 2;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
+
+                    img {
+                        display: block;
+                        width: 220px;
+                        height: 150px;
+                        margin: 0 auto;
+
+                    }
+
+                    h5 {
+                        font-size: 1vw;
+                        background-color: #dab02a;
+                        width: fit-content;
+                        padding: 10px 20px;
+                        border-radius: 50px;
+                    }
+
+                    p {
+                        font-size: 1vw;
+                        margin-top: 10px;
+                        padding: 10px;
 
 
-                    .top-right {
+                    }
 
+
+                }
+
+                .box3 {
+                    border-radius: 40px;
+                    grid-column: 3;
+                    /* column 3 */
+                    grid-row: 1;
+                    /* row 1 */
+                    padding: 10px 30px;
+
+
+                    img {
+                        display: block;
+                        width: 220px;
+                        height: 150px;
+                        margin: 0 auto;
+                    }
+
+                    h5 {
+                        font-size: 1vw;
+                        background-color: #dab02a;
+                        width: fit-content;
+                        padding: 10px 20px;
+                        border-radius: 50px;
+                    }
+
+                    p {
+                        font-size: 1vw;
+                        margin-top: 10px;
+                        padding: 10px;
+
+
+                    }
+
+                }
+
+                .box4 {
+                    border-radius: 40px;
+                    grid-column: 2 / 4;
+                    /* column 2 se 3 tak (dono merge) */
+                    grid-row: 2;
+                    /* row 2 */
+
+                    .text-image {
+                        width: 100%;
+                        padding: 50px 50px;
                         display: flex;
-                        gap: 20px;
 
-                        .box {
-                            flex: 1;
-                            border: 2px solid red;
-                            border-radius: 15px;
-                            height: 380px;
-                            background-color: #f6d0cd;
+
+                        .text {
+
+                            width: 50%;
+
+                            h5 {
+                                font-size: 1.2vw;
+                                background-color: #dab02a;
+                                width: fit-content;
+                                padding: 10px 20px;
+                                border-radius: 50px;
+                            }
+
+                            p {
+                                font-size: 1.2vw;
+                                line-height: 1.5;
+                                margin-top: 10px;
+                                padding: 10px;
+
+
+                            }
+                        }
+
+                        img {
+                            width: 400px;
+                            height: 200px;
 
                         }
-                    }
 
-                    .bottom-right {
-                        background-color: #f6d0cd;
-                        border: 2px solid red;
-                        border-radius: 15px;
-                        height: 380px;
+
+
                     }
                 }
+
+
+                .box {
+                    background-color: #f5cecb;
+                }
             }
+
         }
+
+
+
     }
 }
 
