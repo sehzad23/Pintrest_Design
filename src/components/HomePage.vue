@@ -5,7 +5,7 @@
         <div class="content-part1">
           <h1>
             Lorem ipsum dolor <br />
-            sit amet.
+            <span> sit amet</span>
           </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -126,7 +126,7 @@
 
     <section class="section-4">
       <div class="content">
-        <h1>Lorem ipsum dolor</h1>
+        <h2>Lorem ipsum dolor</h2>
         <div class="grid-box">
           <div class="box box1">
             <img src="@/assets/images/pin1-removebg-preview.png" alt="" />
@@ -172,6 +172,74 @@
         </div>
       </div>
     </section>
+
+    <section class="section-5">
+      <div class="content">
+        <h2>Lorem ipsum dolor</h2>
+
+        <div class="container">
+          <div class="box box1">
+            <h4>Blender</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, iure iste quia doloremque saepe ullam
+              odio error iusto repudiandae mollitia?</p>
+            <button>Start Now</button>
+          </div>
+          <div class="box box2">
+            <h4>Blender</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, iure iste quia doloremque saepe ullam
+              odio error iusto repudiandae mollitia?</p>
+            <button>Start Now</button>
+          </div>
+          <div class="box box3">
+            <h4>Blender</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, iure iste quia doloremque saepe ullam
+              odio error iusto repudiandae mollitia?</p>
+            <button>Start Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-6">
+      <div class="content">
+        <h2>Contact Us</h2>
+
+        <div class="form-container">
+          <div class="img">
+            <img src="@/assets/images/contact-removebg-preview.png" alt="">
+          </div>
+
+          <div class="form">
+            <form>
+
+
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content">
+        <h2>Be Cool</h2>
+        <div class="icons">
+          <i class="ri-google-fill"></i>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-linkedin-box-fill"></i>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 <script>
